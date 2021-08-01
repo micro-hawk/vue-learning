@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>part 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+  </head>
+  <body>
+    <div id="vue-app">
+      <h1>{{header}}</h1>
+      <a v-bind:href="website">MicroHawk</a>
+
+      <!-- Another mwthod to use only ' : ' -->
+      <a :href="website">Non worrbwebsie</a>
+      <input :value="value">
+
+
+      <!-- HTML BINDING USING VUE -->
+      <br>
+      <p v-html="websiteTag"></p>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
