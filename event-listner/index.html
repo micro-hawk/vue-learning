@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listening</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="my-app">
+    <h1>{{heading}}</h1>
+    <p>Click my website so that you will get an idea about portfolio.</p>
+    <a v-bind:href='website'> <button>MicroHawk.me</button></a>
+
+    <div id="canvas" v-on:mousemove="updateXY">{{x}}, {{y}}</div>
+    </div>
+
+    
+</body>
+<script src="app.js"></script>
+</html>
