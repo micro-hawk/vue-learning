@@ -14,8 +14,14 @@
         <p>Enter your order: </p>
         <h3>Quantity: {{quantity}}</h3>
 
-        <button v-on:click="add">+</button>
-        <button v-on:click="sub">-</button>
+        <!-- Vue js knows what you call is function or data so no need to put  -->
+        <!-- paranthesis i() it's not required. -->
+        <button v-on:click="add(1)">+</button>   
+        <button v-on:click="sub(1)">-</button>
+
+
+        <button v-on:dblclick="add(10)">Add more 10</button>
+        <button v-on:dblclick="sub(10)">Add more 10</button>
     </div>
 </body>
 <script type="text/javascript" src="app.js"></script>
