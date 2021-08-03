@@ -17,7 +17,20 @@
     <a v-bind:href='website'> <button>MicroHawk.me</button></a>
 
     <div id="canvas" v-on:mousemove="updateXY">{{x}}, {{y}}</div>
+
+
+    <!-- Event Modifiers / -->
+    <div id="new__block">
+        <button v-on:click.once="btnFunct">once button</button>
+        <a v-on:click.prevent="clicked" href="https://MicroHawk.me">The MicroHawk </a>
     </div>
+
+    <!-- keyboard events -->
+    <div id="kyeboard__events">
+        <input type="text" value='username' v-on:keyup.enter.once="logUsername" />
+        <input type="password" v-on:keyup.enter.once="logPassword" />
+    </div>
+    </div>1
 </body>
 <script src="app.js"></script>
 </html>
